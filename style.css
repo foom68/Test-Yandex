@@ -1,0 +1,941 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+html{
+  scroll-behavior: smooth;
+}
+#main {display: flex;
+       flex-direction: column; 
+        align-items: center;
+    }  
+    
+ .header{
+    display: flex;
+    width: 100%;
+    background:#E5CADE ;
+    }
+    
+  .left{
+    display: flex;
+    position:absolute;
+    z-index: 5;
+    top: 3.71%;
+    flex-direction: column;
+    width: 32vw;
+    margin-left: 16vw;
+    font-size: 3.5vw;
+    }  
+ .logo{
+     width: 45.23%;
+     }
+   
+    .text1 {  
+        font-family: Merriweather;
+        width: 100%;
+        margin-top:11.44% ;
+        font-weight: 400;
+        color: #060606;
+               
+    }
+     .text2  {
+      font-family: Merriweather;
+        font-weight: 400;        
+        text-align:center;        
+    }
+    
+    .text4  {
+      font-family: Golos Text;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        font-size: 1vw;
+        font-weight: 400;        
+        text-align:center;
+        margin-top: 4.05%;
+        }
+    .btns{
+        position: relative;
+        z-index: 10;
+        margin-top: 5.71%;
+         display:inline-flex;
+        justify-content:space-around; 
+           
+        }
+    .btn1{
+        display:inline-flex;
+        background: #060606;
+        flex-basis:48.62%;
+        padding: 3%;
+        border-radius: 66px;
+        text-align: center;
+        font-family: Golos Text;
+        font-weight: 500;
+        font-size: 1.2vw;
+        color: #ffff;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        text-indent: 4%;
+    }
+    .btn1:hover{       
+        background:#FBCE51;
+        color:#1F1F1F;
+         }
+    .btn2{
+        display:inline-flex;
+        border: 2px solid #303030;        
+        flex-basis:48.62%;
+        font-family: Golos Text;
+        font-weight: 500;
+        border-radius: 66px;
+        font-weight: 600;
+        font-size: 1.2vw;
+        color: #303030;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        text-indent: -4%;
+        background:#E5CADE ;
+        
+    }
+    .btn2:hover{
+        background:#060606;        
+        color:#E9DED4;
+    }
+    .rait{
+        flex:1;
+        flex-basis: 100%;
+        margin-left: auto; 
+        
+    }
+        
+    .group2{ 
+        position: relative;
+        z-index:2;
+         width: 100%;
+    }
+    .article {
+        display: flex;
+        background:rgba(229, 238, 235, 0.952);
+    }
+    .lenta {
+       position: relative;
+        z-index: 45;
+        width: 100%;
+        height: 9vh;
+        margin: auto 0;
+        background: #F54932;
+    }
+    .lenta1 {
+        width: 100%;
+        height: 22px;
+        padding-top: 2.6vh;
+        font-family: Merriweather;
+        font-size: 3.4vh;
+        font-weight: 400;
+        color: #FFFFFF;        
+    }
+
+ /* Блок ИДЕЯ */
+
+
+.idey-mob{
+  display: none;
+}
+ .idey{
+    display: flex;
+    flex-direction: row;
+    width: 89.45vw;
+    margin-top: 5vh;
+       }
+    
+     .left-text { 
+        display: flex; 
+        width: 60vw; 
+        }
+    .left-text p{ 
+        width: 56vw;
+        margin-left:12vw;
+        align-self:center;
+        font-family: Merriweather;
+        font-size: 2vw;
+        font-weight: 400;
+        color: #060606;
+         }
+    .colortext{
+        color: #F54932;
+        font-weight: 700;
+    } 
+    .rait-idey{
+        flex: 1;
+        flex-basis: 40%;
+      } 
+    .photo1{
+        width:80%;
+      }  
+
+    /* СЕАНС ИГРЫ */
+
+    .seans{
+        display: flex;
+    flex-direction: row;
+    width: 89.45vw;
+    margin-top: 1%;
+    
+        }
+        .photo-left{
+            flex: 1;
+            width: 60vw;
+            margin-top: 6%;
+        } 
+        .photo2{
+            margin-left: 12vw;
+            width: 24.18vw;
+            }  
+       .rait-text-mob{
+              display: none;
+            }
+        rait-text { 
+                display: flex;
+                flex-direction: column; 
+                width: 60vw; 
+                margin-top: 6%;
+                margin-left:2.5% ;
+                font-family: Merriweather; 
+                font-size: 2vw;
+                font-weight: 400;
+                color: #060606;
+                align-self:flex-start; 
+            }
+            .rait-text p{
+                padding-left: 5%;
+                margin-bottom: 5%;
+            }
+            
+        /* ТАБЛИЦА     */
+
+
+.table-mobil{
+    display: none;
+}
+del{
+    text-decoration: line-through;
+    text-decoration-color: red;
+  }
+            .table .row {
+                margin-left: 1vw;
+                width: 82%;
+                display: flex;
+                flex-wrap: wrap;
+               }
+                
+            .cell {
+                flex: 1;
+                font-family: Golos Text;
+                font-weight: 400;
+                font-size: 1.2vw;
+                padding: 1vw;
+                border: 2px solid #d0d0d0;
+                text-align:start;
+                border-left: none;
+              }  
+               
+              .row .cell:first-child{
+                border-top: none;
+               }
+              .row .cell:last-child{
+                border-top: none;
+                border-right: none;
+                font-weight: 700;
+                }
+                .row:last-child .cell{
+                    border-bottom:none;
+                }
+           .seans-text{
+                width: 82%;
+                font-family: Golos Text;
+                font-weight: 400;
+                font-size: 1.2vw;
+                color: #3057A2;
+                margin-top: 2vh; 
+               }   
+
+            
+    /*  самолет        */
+
+
+    .slider{
+      display: none;
+    }
+            .flay {
+                display: flex;
+                flex-direction: column;
+                margin-top: 9.3vh;
+             }
+            .flay-text{
+                display: flex;
+                width: 59vw;
+                margin-left: 12vw;
+                font-family: Merriweather;
+                font-size: 3.95vw;
+                font-weight: 400;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+            .bigtext{
+                display: flex;
+                font-size: 3.95vw;
+                font-weight: 400;
+                }
+            .sizetext{
+                display: flex;
+                align-self: center;
+                margin-left: 1%;
+                text-align: left;
+                font-family: Golos Text;
+                font-weight: 400;
+                font-size: 1.2vw;
+                color: #3057A2;
+                }
+  .sec{
+    display: flex;
+    width: 89.45vw;
+    flex-wrap: wrap;
+     }
+     .sec0{
+      display: flex;
+        flex-direction: column;
+        width: 60vw;
+        padding: 1vw;
+       }
+     .sec1 {
+        display: flex;
+        width: 49vw;
+        padding: 1vw;
+        align-self: flex-end;
+        }
+     .sec1 img{
+        width: 22vw;
+        margin: auto;
+       }
+     .sec2{
+        display: flex;
+        width: 49vw;
+        padding: 1vw;
+        align-self:flex-end;
+     }
+     .sec2 img{
+     width: 22vw;
+        margin: auto;
+     }
+     .sec3{
+        position: relative;
+        display: inline-flex;
+        width: 29vw;
+        padding: 2vw;
+        padding-left: 1vw;
+       }
+     .sec3 img{
+        width:20vw;
+        height:auto
+     }
+     .flaer{
+      display: flex;
+      position: relative;
+      z-index: 2;
+      width: fit-content;
+      left: -15vw;
+      top: 55%;
+      rotate: -15deg;
+     }
+        .sec00{
+            display: inline-flex;
+            width: 89.45vw;
+            margin-left: 12vw;
+            margin-right: 12vw;
+             }
+         .sec4{
+            display: flex;
+            width: 22vw;
+            }
+             .sec4 img{
+                 width: 22vw;
+             }
+             .sec5{
+                display:flex;
+                width: 46vw;
+                margin: auto 1vw 0;
+             }
+             .sec5 img{
+                 width: 46vw;
+              }
+            
+  /* Галлерея Участники */
+
+         
+     .container {
+      display: flex;
+       flex-direction: column;
+       width: 89.45vw;
+       margin: 5% auto; 
+    }
+    
+.title-text{
+                margin-left: 12vw;
+                font-family: Merriweather;
+                font-weight: 400;
+                font-size: 3.95vw;
+                font-weight: 400;
+}
+.slid-index{
+                display: flex;
+                margin-top: 3%;
+                margin-bottom: 3%;
+                align-items: center;
+}
+    
+.itc-slider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  }
+
+.itc-slider-wrapper {
+   overflow: hidden;
+  }
+
+.itc-slider-items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.itc-slider-transition-none {
+  transition: none;
+}
+
+.itc-slider-item {
+  flex: 0 0 30vw;
+  width: 30vw;
+  user-select: none;
+  will-change: transform;
+}
+.itc-slider-item .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.itc-slider-item .card img{
+  width: 80%;
+}
+.itc-slider-item .card p{
+  width: 90%;
+  margin-top: 5%;
+  font-family: Golos text;
+  font-size: 1.75vw;
+  font-weight: 600;
+}
+.itc-slider-item .card .sizetext-gal{
+   font-size: 1.46vw;
+  font-weight: 400;
+  align-items: center;
+  }
+.btns1{
+  width: 30%;
+  padding: 2% 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 60px;
+  background: #094bc5;
+  text-align: center;
+  
+}
+.btn31 {
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.32vw;
+  color: #ccc;
+  padding: 3%;
+  
+}
+ .btn31:hover{
+ color:  #3057A2;
+ 
+}
+.btns1:hover{
+  background: #ccc;
+  border: 1px solid #3057A2;
+}
+/* кнопки влево и вправо */
+.title-index{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 3%;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+.itc-slider-btn-prev {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #c78030;
+  rotate: 180deg;
+}
+
+.itc-slider-btn-next {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #c78030;
+ }
+
+ .itc-slider-btn:hover
+  { color: #fff; 
+  text-decoration: none;
+  background:#3057A2 ;
+  outline-color: transparent;
+ }  
+
+ .itc-slider-btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(img/right-arrow.svg) center no-repeat;
+  background-size:cover; 
+} 
+
+
+/* индикаторы */
+
+
+.itc-slider-indicators {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content:flex-end;
+  margin: 0 1%;
+  padding-left: 0;
+  list-style: none;
+
+}
+
+.itc-slider-indicator {
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgba(236, 121, 13, 0.5);
+  background-clip: padding-box;
+  border-radius: 50%;
+  cursor: pointer; 
+  
+}
+
+.itc-slider-indicator-active {
+  background-color: rgba(236, 121, 13, 0.9);
+}
+                            
+ footer{display: flex;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  background: #E9DED4;
+  ;
+ } 
+ footer p{
+  font-family: Colos Text;
+  width: 89.45vw;
+  font-size: 16px;
+  font-weight: 400;
+  color: #313131;
+   }           
+      
+            
+@media screen and (min-width: 320px) and (max-width: 480px)   {
+  .header{
+    flex-direction: column;
+  }
+  .left{
+    display: flex;
+     position: relative;
+     z-index: 3; 
+    width: 80vw;
+    margin:20px auto;
+    font-size:7.5vw; 
+  }
+   .text4  {
+    flex-shrink: 1;
+    flex-basis: 100%;
+    font-size: 2.5vw;
+    text-align:center;
+    margin-top: 4.05%;
+    } 
+  .btns{
+    flex-direction: column;
+    width: 100%;
+    margin:5.71% auto;
+    
+  }
+    .btn1{
+      background: #060606;
+      padding: 3%;
+      border-radius: 66px;
+      margin-bottom: 5%;
+      font-size: 2.5vw;
+      color: #ffff;
+      justify-content:center;
+      align-items: center;
+      
+      
+  }
+  .btn2{
+    border: 1px solid #303030;        
+    flex-basis:48.62%;
+    background: #E7DCC8;
+    padding: 3%;
+    border-radius: 66px;
+    font-size: 2.5vw;
+    color: #303030;
+    justify-content: center;
+    align-items: center;
+    text-indent: -4%;
+}
+.rait {
+  
+display:flex;
+width: 100vw;
+overflow: hidden;
+position: relative;
+margin:-27vw 0 0 0 ;
+flex-shrink: 0;
+
+}
+  .group2 { 
+    display: flex;
+    flex-shrink: 0;  
+    position: relative;
+    z-index:2;
+    overflow: hidden;
+    width: 200vw;
+    margin: 0 0 0 -89vw;
+    background:none;
+}
+.idey{
+  display: none;
+}
+.idey-mob{
+  display: flex;
+  
+}
+.left-text-mob{
+
+  width: 86vw;
+  margin: 3% auto;
+}
+.left-text-mob p{
+  font-family: Merriweather;
+  font-size: 28px;
+  font-weight: 400;
+  margin-left: 3%;
+  
+}
+.left-text-mob >.rait-idey-mob > .photo1{
+  width: 75vw;
+  margin-left:6% ;
+  
+}
+
+.seans{
+  display: flex;
+flex-direction: column;
+width: 86vw;
+margin-top: 5%;
+
+  }
+  .photo-left{
+    
+    width: 75vw;
+    margin: auto;
+   
+} 
+.photo-left .photo2{
+    margin-left: 0; 
+     width: 100%;
+    } 
+
+    .rait-text{
+      display: none;
+    }
+    .rait-text-mob { 
+       display: flex;
+      flex-direction: column;  
+      width: 86vw;
+      margin-top: 10%;
+      font-family: Merriweather;
+      font-size: 28px;
+      font-weight: 400;
+      color: #313131;
+      align-self:flex-start; 
+      
+  }
+  .rait-text-mob p{
+
+    margin-left: 3%;
+    margin-bottom: 13%;
+  }
+  
+  .table-mob .cell {
+    flex: 1;
+    font-size: 5vw;
+    padding: 1vw;
+    border: 2px solid #ccc;
+    text-align:start;
+    border-left: none;
+    
+  } 
+  .row .cell:last-child{
+font-weight: 400;
+padding: 5%;
+
+  }
+  .sizetext-mob{
+    font-family: Golos Text;
+    font-size:20px ;
+    font-weight: 600;
+    
+  } 
+  .seans-text{
+    width: 100%;
+    font-size: 4.5vw;
+    font-weight: 400;
+    margin-top: 8%; 
+    margin-left: 0;
+    }  
+
+
+
+                /* Слайдер  этапов*/
+
+.flay{
+  display: none;
+}
+
+
+
+                .slider { 
+                  
+                  width: 80vw;
+                  position: relative;
+                  display: flex;
+                  flex-direction: column;
+                
+                  }
+
+                  .slider-title {display: flex;
+                    flex-direction: column;
+                    width: 80vw;
+                    
+                      }
+                      .flay-text{
+                         width: 100%;
+                         margin-left: 0;
+                        font-family: Merriweather;
+                        font-size: 8vw;
+                        font-weight: 400;
+                        letter-spacing: 0px;
+                        text-align: left;
+                    }
+                    .sizetext{
+                     align-self: center;
+                      text-align: left;
+                      font-size: 4.2vw;
+                      color: #3057A2;
+                  
+                  }
+                    
+                  .slider .flaer-gal{
+                     position: relative;
+                    width: 100%;
+                    padding: 2vw;
+                    padding-left: 1vw;
+          
+        }
+        .sek3 img{
+          width:30vw;
+          height:auto
+       }
+                 .slider .flaer-gal .sek3{
+                  display: flex;
+                   position: relative;
+        z-index: 1;
+        margin-left:20%;
+        margin-top:-10% ; 
+         justify-content: center;
+         align-items:end; 
+          rotate: -15deg;
+                    } 
+                   
+               
+                 .slider .wrap .slider-item {
+                  display: flex;
+                  width: 80vw;
+                  margin: 0 auto;
+                  
+                }
+                 .slider .wrap .slider-item .sec-gal1 {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  height: 200px;
+                  margin: auto;
+                  background: #E7DCC8
+                }
+                .slider .wrap .slider-item .sec-gal1 .sat1{
+                  display: flex;
+                  width: 100%;
+                  }
+                
+                .slider .wrap .slider-item .sec-gal1 .sat1 img{
+                  width: 10%;
+                  border:1px solid #000 ;
+                  border-radius: 50%;
+                  margin-left: 2%;
+                  margin-right: 2%;
+                  margin-top: 3%;
+                  align-self: flex-start;
+               }
+               
+               .slider .wrap .slider-item .sec-gal1 .sat1 p {
+                width: 80%;
+                font-size: 18px;
+                font-weight: 500;
+                height: fit-content;
+                margin:1.5vw 1vw; 
+                /* background: #3057A2;              */
+               }
+               .slider  .prev {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #c78030;}
+                .slider .prev:before {
+                  content: "";
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  margin-top: 15%;
+                  margin-left: 15%;
+                  background: url(img/right-arrow.svg) center no-repeat;
+                  background-size:cover;
+                  rotate: 180deg; 
+                } 
+                .slider .prev:hover {
+                  background-color:#03a9f4;
+                }
+               
+                            
+                 .slider  .next {
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background: #c78030;
+                  
+                }
+                .slider .next:before {
+                  content: "";
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  margin-top: 15%;
+                  margin-left: 15%;
+                  background: url(img/right-arrow.svg) center no-repeat;
+                  background-size:cover; 
+                } 
+                .slider .next:hover {
+                  background-color:#03a9f4;
+                }
+                
+                .slider .slider-dots{
+                  display: flex;
+                  width: 90%;
+                  margin: 5%;
+                  justify-content: center;
+                  align-items: center;
+                }
+                                  
+                 .slider-dots .dot {
+                  cursor: pointer;
+                  height: 16px;
+                  width: 16px;
+                  margin: auto 10px;
+                  background-color: #c78030;
+                  border-radius: 50%;
+                  opacity: 0.5;
+                   -webkit-transition: background-color 0.6s ease;
+                          transition: background-color 0.6s ease;
+                }
+                 .slider-dots .dot-active {
+                  background-color: #c78030;
+                  opacity: 0.9;
+
+                }
+
+/* Участники турнира */
+
+
+.title-text{
+  margin-left: 12vw;
+  font-family: Merriweather;
+  font-weight: 400;
+  font-size: 8vw;
+  
+}
+.itc-slider-item .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+                .itc-slider-item {
+                  flex: 0 0 100%;
+                  user-select: none;
+                  will-change: transform;
+                }
+                .itc-slider-item .card p{
+                  width: 90%;
+                  margin-top: 5%;
+                  font-family: Golos text;
+                  font-size: 24px;
+                  font-weight: 600;
+                }
+                .itc-slider-item .card .sizetext-gal{
+                  font-size: 20px;
+                 font-weight: 400;
+                 align-items: center;
+                 }
+                .btn31 {
+                  vertical-align: middle;
+                  text-decoration: none;
+                  font-size: 18px;
+                  color: #ccc;
+                  padding: 3%;
+                 
+                }
+}         
+   
